@@ -14,7 +14,6 @@ body{
     line-height:1.7;
 }
 
-<<<<<<< HEAD
 /* MAIN HEADINGS FONT */
 
 h1,
@@ -75,11 +74,6 @@ h3,
     0 0 50px rgba(56,189,248,0.4);
 }
 
-/* HEADER */
-=======
-/* HEADERr */
->>>>>>> 3d4a6e1a88575f773b03eb8c5c984a8bf10161f6
-
 header{
 
     width:100%;
@@ -88,9 +82,9 @@ header{
 
     display:flex;
 
-    justify-content:space-between;
+    justify-content:left;
 
-    align-items:center;
+    align-items:left;
 
     position:sticky;
 
@@ -104,6 +98,7 @@ header{
 
     border-bottom:1px solid rgba(255,255,255,0.08);
 }
+
 header h1{
     font-size:32px;
     font-weight:700;
@@ -123,7 +118,9 @@ nav{
 
     gap:28px;
 
-    margin-right:120px;
+    position:absolute;
+
+    right:180px;
 }
 
 /* NAVBAR LINKS */
@@ -136,7 +133,7 @@ nav a{
 
     font-family:'Rajdhani',sans-serif;
 
-    font-size:17px;
+    font-size:25px;
 
     font-weight:600;
 
