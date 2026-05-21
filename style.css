@@ -698,3 +698,113 @@ footer{
     0 0 35px rgba(56,189,248,0.35);
 }
 
+/* ABOUT IMAGE ROW */
+
+.about-image-row{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:35px;
+
+    margin-bottom:20px;
+
+    flex-wrap:wrap;
+}
+
+/* PROFILE PHOTO */
+
+.profile-photo{
+
+    width:200px;
+
+    height:200px;
+
+    object-fit:cover;
+
+    object-position:center 12%;
+
+    border-radius:50%;
+
+    border:4px solid #38bdf8;
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,0.5),
+    0 0 40px rgba(56,189,248,0.25);
+
+    transition:0.4s;
+}
+
+/* LAB LOGO */
+
+/* LAB LOGO */
+
+/* LAB LOGO */
+
+.about-logo {
+
+    width: 200px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    object-position: center 50%;
+
+    border-radius: 50%;
+
+    border: 3px solid #38bdf8;
+
+    background: rgb(255, 255, 255);
+
+    padding: 0px;
+
+    overflow: hidden;
+
+    box-shadow:
+    0 0 18px rgba(56,189,248,0.45);
+
+    transition: all 0.4s ease;
+
+    transform: none;
+
+    display: block;
+}
+
+/* LOGO HOVER */
+
+.about-logo:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+    0 0 35px rgba(56,189,248,0.8);
+}
+/* HOVER EFFECT */
+
+.profile-photo:hover{
+
+    transform:scale(1.06);
+
+    box-shadow:
+    0 0 30px rgba(56,189,248,0.7);
+}
+
+
+/* NAME */
+
+.about-name{
+
+    text-align:center;
+
+    margin-top:15px;
+
+    color:#38bdf8;
+
+    font-size:28px;
+
+    font-weight:600;
+}
