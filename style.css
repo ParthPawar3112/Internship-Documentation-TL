@@ -649,3 +649,52 @@ footer{
 
     letter-spacing:0.5px;
 }
+
+/* LOG LINKS */
+
+.log-link{
+
+    text-decoration:none;
+
+    display:block;
+
+    color:white;
+}
+
+.log-link:hover .log-card{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(56,189,248,0.35);
+}
+
+/* DOCUMENTATION IMAGES */
+
+.project-card img{
+
+    width:100%;
+
+    max-width:850px;
+
+    display:block;
+
+    margin:25px auto;
+
+    border-radius:18px;
+
+    border:2px solid rgba(56,189,248,0.3);
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,0.18);
+
+    transition:0.4s;
+}
+
+.project-card img:hover{
+
+    transform:scale(1.015);
+
+    box-shadow:
+    0 0 35px rgba(56,189,248,0.35);
+}
+
