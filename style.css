@@ -839,4 +839,103 @@ footer{
     0 0 30px rgba(56,189,248,0.45);
 }
 
+/* REMOVE UNDERLINE FROM LOG CARDS */
 
+.log-card{
+    text-decoration: none;
+    color: white;
+}
+
+.log-card h3,
+.log-card p{
+    text-decoration: none;
+}
+
+.log-card:hover{
+    text-decoration: none;
+}
+
+
+/* ========================= */
+/* INTERNSHIP JOURNEY TIMELINE */
+/* ========================= */
+
+.timeline{
+    position: relative;
+    max-width: 900px;
+    margin: 60px auto;
+    padding-left: 40px;
+}
+
+/* Vertical Line */
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #38bdf8;
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+/* Timeline Item */
+
+.timeline-item{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Dot */
+
+.timeline-dot{
+    position: absolute;
+    left: -31px;
+    top: 8px;
+
+    width: 22px;
+    height: 22px;
+
+    background: #38bdf8;
+    border-radius: 50%;
+
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* Content Box */
+
+.timeline-content{
+    background: rgba(20, 35, 60, 0.95);
+    padding: 25px;
+    border-radius: 18px;
+
+    border: 1px solid rgba(56, 189, 248, 0.3);
+
+    transition: 0.4s ease;
+
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+/* Hover Effect */
+
+.timeline-content:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+/* Heading */
+
+.timeline-content h3{
+    color: #38bdf8;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+/* Paragraph */
+
+.timeline-content p{
+    color: #d1d5db;
+    line-height: 1.8;
+    font-size: 1rem;
+}
