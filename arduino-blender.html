@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arduino Blender Integration | Parth Pawar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Parth Anil Pawar</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#projects">Projects</a>
+
+        <a href="index.html#logs">Logs</a>
+
+        <a href="index.html#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+<section>
+
+    <h2 class="section-title">
+
+        Arduino Blender Integration
+
+    </h2>
+
+    <!-- PROJECT OVERVIEW -->
+
+    <div class="project-card">
+
+        <h3>Project Overview</h3>
+
+        <p>
+
+            Arduino Blender Integration is an innovative project that
+            connects physical hardware with a 3D modelling environment.
+
+            Through serial communication and Python scripting,
+            Arduino inputs are transmitted directly into Blender,
+            allowing real-time interaction with digital objects.
+
+        </p>
+
+    </div>
+
+    <!-- WHY UNIQUE -->
+
+    <div class="project-card">
+
+        <h3>Why This Project Is Unique</h3>
+
+        <ul>
+
+            <li>
+                Combines Electronics and 3D Design
+            </li>
+
+            <li>
+                Uses Real-Time Serial Communication
+            </li>
+
+            <li>
+                Connects Physical Inputs to Virtual Objects
+            </li>
+
+            <li>
+                Demonstrates Embedded Systems + Automation
+            </li>
+
+            <li>
+                Bridges Hardware and Creative Technologies
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- TECHNOLOGIES -->
+
+    <div class="project-card">
+
+        <h3>Technologies Used</h3>
+
+        <ul>
+
+            <li>Arduino Uno</li>
+
+            <li>Python</li>
+
+            <li>Blender</li>
+
+            <li>Serial Communication</li>
+
+            <li>Embedded Systems</li>
+
+            <li>Automation Workflow</li>
+
+        </ul>
+
+    </div>
+
+    <!-- WORKFLOW -->
+
+    <div class="project-card">
+
+        <h3>Working Principle</h3>
+
+        <p>
+
+            Arduino collects input from hardware devices and sends
+            data through serial communication.
+
+            Python acts as a bridge between Arduino and Blender.
+
+            Blender receives the incoming data and performs actions
+            such as generating, moving, scaling, or modifying 3D objects
+            in real time.
+
+        </p>
+
+    </div>
+
+    <!-- IMAGE slider -->
+
+    <div class="project-card">
+
+    <h3>Project Gallery</h3>
+
+    <p>
+        Images showcasing the Arduino-Blender integration setup,
+        real-time object generation, and project workflow.
+    </p>
+
+    <div class="slider">
+
+        <div class="slides">
+
+            <img src="arduino-blender-1.png"
+                 alt="Arduino Blender Image 1">
+
+            <img src="arduino-blender-2.png"
+                 alt="Arduino Blender Image 2">
+
+            <img src="arduino-blender-3.png"
+                 alt="Arduino Blender Image 3">
+
+            <img src="arduino-blender-4.png"
+                 alt="Arduino Blender Image 4">
+
+        </div>
+
+        <button class="prev" onclick="moveSlide(-1)">
+            ❮
+        </button>
+
+        <button class="next" onclick="moveSlide(1)">
+            ❯
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- VIDEO -->
+
+    <div class="project-card">
+
+        <h3>Project Demonstration Video</h3>
+
+        <video controls width="100%">
+
+            <source src="arduino-blender-demo.mp4"
+                    type="video/mp4">
+
+            Your browser does not support video playback.
+
+        </video>
+
+    </div>
+
+    <!-- IMPACT -->
+
+    <div class="project-card">
+
+        <h3>Project Impact</h3>
+
+        <p>
+
+            This project demonstrates how embedded systems can interact
+            with advanced design software, opening possibilities for
+            digital manufacturing, interactive installations,
+            robotics simulations, smart prototyping,
+            and creative engineering applications.
+
+        </p>
+
+    </div>
+
+    <!-- FUTURE IMPROVEMENTS -->
+
+    <div class="project-card">
+
+        <h3>Future Enhancements</h3>
+
+        <ul>
+
+            <li>
+                Multiple sensor integration
+            </li>
+
+            <li>
+                Wireless communication
+            </li>
+
+            <li>
+                Real-time robotics visualization
+            </li>
+
+            <li>
+                Digital twin simulation
+            </li>
+
+            <li>
+                Gesture-controlled 3D environments
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+
+        © 2026 Parth Anil Pawar | Project Showcase
+
+    </p>
+
+</footer>
+
+<script>
+let currentSlide = 0;
+
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slides img').length;
+
+function moveSlide(direction) {
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+
+    if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
+
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+// Open image in new tab on click
+document.querySelectorAll('.slides img').forEach(img => {
+    img.addEventListener('click', () => {
+        window.open(img.src, '_blank');
+    });
+});
+</script>
+
+</body>
+
+</html>
