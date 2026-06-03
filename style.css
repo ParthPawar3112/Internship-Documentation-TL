@@ -1007,3 +1007,46 @@ footer{
 .next {
     right: 15px;
 }
+
+/* ========================= */
+/* IMAGE GALLERY */
+/* ========================= */
+
+.image-gallery{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+.image-gallery img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:2px solid rgba(56,189,248,0.4);
+
+    transition:0.3s ease;
+
+    cursor:pointer;
+
+}
+
+.image-gallery img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 25px rgba(56,189,248,0.7);
+
+}
